@@ -519,7 +519,6 @@
     {
       "scope": [
         "variable",
-        "variable.parameter",
         "meta.definition.variable",
         "variable.other.property",
         "support.variable"
@@ -532,10 +531,20 @@
       "scope": [
         "variable.language",
         "variable.language.self",
-        "variable.language.this"
+        "variable.language.this",
+        "variable.parameter.function.language.special"
       ],
       "settings": {
         "foreground": "#ea9a78",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#a8a29e",
         "fontStyle": "italic"
       }
     },
@@ -654,7 +663,10 @@
     "enum": "#94c7bb",
     "interface": "#94c7bb",
     "namespace": "#94c7bb",
-    "parameter": "#e8e6e3",
+    "parameter": {
+      "foreground": "#a8a29e",
+      "italic": true
+    },
     "variable": "#e8e6e3",
     "property": "#e8e6e3",
     "decorator": "#ea9a78",
