@@ -59,7 +59,7 @@ Both themes use the 18 colors in [`palette.json`](palette.json). Every color in 
 | --- | --- | --- |
 | bright | `#f4f1ec` | headings, bold text, active tab |
 | text | `#e8e6e3` | body text, variables |
-| muted | `#a8a29e` | secondary text, operators, punctuation, parameters (italic) |
+| muted | `#b0aea5` | secondary text, operators, punctuation, parameters (italic) |
 | dim | `#8a847d` | comments, inactive text, inlay hints |
 
 **Clay**: accent
