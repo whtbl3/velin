@@ -27,10 +27,10 @@
     <text x="62" y="204" xml:space="preserve"></text>
     <text x="62" y="224" xml:space="preserve"><tspan fill="#e8e6e3">btn</tspan><tspan fill="#a8a29e">.</tspan><tspan fill="#ebcb8b">addEventListener</tspan><tspan fill="#ebcb8b">(</tspan><tspan fill="#a7bd86">'click'</tspan><tspan fill="#a8a29e">,</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#d98a9a">(</tspan><tspan fill="#d98a9a">)</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#ea9a78">=&gt;</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#d98a9a">{</tspan></text>
     <text x="62" y="244" xml:space="preserve"><tspan fill="#e8e6e3">  </tspan><tspan fill="#8a847d">// Count from 1 to 10.</tspan></text>
-    <text x="62" y="264" xml:space="preserve"><tspan fill="#e8e6e3">  </tspan><tspan fill="#ea9a78">if</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#c6a5c1">(</tspan><tspan fill="#e8e6e3">count</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#a8a29e">&lt;</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#ebcb8b">10</tspan><tspan fill="#c6a5c1">)</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#c6a5c1">{</tspan></text>
+    <text x="62" y="264" xml:space="preserve"><tspan fill="#e8e6e3">  </tspan><tspan fill="#ea9a78">if</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#e3b9a0">(</tspan><tspan fill="#e8e6e3">count</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#a8a29e">&lt;</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#ebcb8b">10</tspan><tspan fill="#e3b9a0">)</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#e3b9a0">{</tspan></text>
     <text x="62" y="284" xml:space="preserve"><tspan fill="#e8e6e3">    </tspan><tspan fill="#e8e6e3">count</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#a8a29e">+=</tspan><tspan fill="#e8e6e3"> </tspan><tspan fill="#ebcb8b">1</tspan><tspan fill="#a8a29e">;</tspan></text>
     <text x="62" y="304" xml:space="preserve"><tspan fill="#e8e6e3">    </tspan><tspan fill="#ebcb8b">render</tspan><tspan fill="#ebcb8b">(</tspan><tspan fill="#ebcb8b">)</tspan><tspan fill="#a8a29e">;</tspan></text>
-    <text x="62" y="324" xml:space="preserve"><tspan fill="#e8e6e3">  </tspan><tspan fill="#c6a5c1">}</tspan></text>
+    <text x="62" y="324" xml:space="preserve"><tspan fill="#e8e6e3">  </tspan><tspan fill="#e3b9a0">}</tspan></text>
     <text x="62" y="344" xml:space="preserve"><tspan fill="#d98a9a">}</tspan><tspan fill="#ebcb8b">)</tspan><tspan fill="#a8a29e">;</tspan></text>
     <text x="62" y="364" xml:space="preserve"></text>
     </g>

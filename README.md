@@ -78,7 +78,7 @@ Both themes use the 18 colors in [`palette.json`](palette.json). Every color in 
 | teal | `#94c7bb` | classes |
 | blue | `#6c9fc4` | info, terminal blue |
 | rose | `#d98a9a` | `UPPER_CASE` constants, bracket level 2, terminal magenta |
-| purple | `#c6a5c1` | built-in types (`int`, `str`, `dict`), bracket level 3 |
+| pink | `#e3b9a0` | built-in types (`int`, `str`, `dict`), bracket level 3 |
 | red | `#bf616a` | errors, deleted lines, failing tests |
 
 ## Notes

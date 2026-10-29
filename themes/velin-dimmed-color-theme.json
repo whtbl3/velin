@@ -181,7 +181,7 @@
     "gitDecoration.conflictingResourceForeground": "#ea9a78",
     "editorBracketHighlight.foreground1": "#ebcb8b",
     "editorBracketHighlight.foreground2": "#d98a9a",
-    "editorBracketHighlight.foreground3": "#c6a5c1",
+    "editorBracketHighlight.foreground3": "#e3b9a0",
     "editorBracketHighlight.unexpectedBracket.foreground": "#bf616a",
     "tab.unfocusedActiveBackground": "#443027",
     "tab.unfocusedActiveForeground": "#e8e6e3",
@@ -306,7 +306,7 @@
     "debugConsole.warningForeground": "#ebcb8b",
     "debugConsole.infoForeground": "#6c9fc4",
     "debugConsole.sourceForeground": "#e8e6e3",
-    "debugTokenExpression.name": "#c6a5c1",
+    "debugTokenExpression.name": "#e3b9a0",
     "debugTokenExpression.value": "#a8a29e",
     "debugTokenExpression.string": "#a7bd86",
     "debugTokenExpression.number": "#ebcb8b",
@@ -379,7 +379,7 @@
     "settings.headerForeground": "#f4f1ec",
     "extensionIcon.starForeground": "#ebcb8b",
     "extensionIcon.verifiedForeground": "#6c9fc4",
-    "extensionIcon.preReleaseForeground": "#c6a5c1",
+    "extensionIcon.preReleaseForeground": "#e3b9a0",
     "extensionIcon.sponsorForeground": "#d98a9a",
     "profileBadge.background": "#30302e",
     "profileBadge.foreground": "#e8e6e3",
@@ -391,9 +391,9 @@
     "scmGraph.foreground2": "#d98a9a",
     "scmGraph.foreground3": "#94c7bb",
     "scmGraph.foreground4": "#6c9fc4",
-    "scmGraph.foreground5": "#c6a5c1",
+    "scmGraph.foreground5": "#e3b9a0",
     "scmGraph.historyItemRefColor": "#6c9fc4",
-    "scmGraph.historyItemRemoteRefColor": "#c6a5c1",
+    "scmGraph.historyItemRemoteRefColor": "#e3b9a0",
     "scmGraph.historyItemBaseRefColor": "#ea9a78",
     "scmGraph.historyItemHoverAdditionsForeground": "#a7bd86",
     "scmGraph.historyItemHoverDeletionsForeground": "#bf616a",
@@ -404,7 +404,7 @@
     "charts.yellow": "#ebcb8b",
     "charts.orange": "#ea9a78",
     "charts.green": "#a7bd86",
-    "charts.purple": "#c6a5c1",
+    "charts.purple": "#e3b9a0",
     "terminalCommandDecoration.defaultBackground": "#8a847d",
     "terminalCommandDecoration.successBackground": "#a7bd86",
     "terminalCommandDecoration.errorBackground": "#bf616a",
@@ -513,7 +513,7 @@
         "support.type.python"
       ],
       "settings": {
-        "foreground": "#c6a5c1"
+        "foreground": "#e3b9a0"
       }
     },
     {
@@ -662,10 +662,10 @@
       "foreground": "#ea9a78",
       "italic": true
     },
-    "class.builtin": "#c6a5c1",
-    "class.defaultLibrary": "#c6a5c1",
-    "type.builtin": "#c6a5c1",
-    "type.defaultLibrary": "#c6a5c1",
+    "class.builtin": "#e3b9a0",
+    "class.defaultLibrary": "#e3b9a0",
+    "type.builtin": "#e3b9a0",
+    "type.defaultLibrary": "#e3b9a0",
     "variable.readonly": "#d98a9a"
   }
 }
