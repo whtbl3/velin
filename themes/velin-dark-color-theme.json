@@ -550,12 +550,21 @@
     },
     {
       "scope": [
-        "entity.name.tag",
-        "meta.decorator",
-        "entity.name.function.decorator"
+        "entity.name.tag"
       ],
       "settings": {
         "foreground": "#ea9a78"
+      }
+    },
+    {
+      "scope": [
+        "meta.decorator",
+        "entity.name.function.decorator",
+        "meta.function.decorator.python support.type.python",
+        "meta.function.decorator.python support.function.builtin.python"
+      ],
+      "settings": {
+        "foreground": "#6c9fc4"
       }
     },
     {
@@ -669,7 +678,7 @@
     },
     "variable": "#e8e6e3",
     "property": "#e8e6e3",
-    "decorator": "#ea9a78",
+    "decorator": "#6c9fc4",
     "selfParameter": {
       "foreground": "#ea9a78",
       "italic": true

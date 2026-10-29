@@ -66,7 +66,7 @@ Both themes use the 18 colors in [`palette.json`](palette.json). Every color in 
 
 | Name | Color | Used for |
 | --- | --- | --- |
-| accent | `#ea9a78` | keywords, decorators, `self`, links, buttons, cursor, focus border, selections (translucent) |
+| accent | `#ea9a78` | keywords, `self`, links, buttons, cursor, focus border, selections (translucent) |
 | surface | `#443027` | active tab background |
 
 **Earth**: syntax and status
@@ -76,7 +76,7 @@ Both themes use the 18 colors in [`palette.json`](palette.json). Every color in 
 | yellow | `#ebcb8b` | function names, numbers, `True`/`None`, warnings, bracket level 1 |
 | green | `#a7bd86` | strings, added lines, passing tests |
 | teal | `#94c7bb` | classes |
-| blue | `#6c9fc4` | info, terminal blue |
+| blue | `#6c9fc4` | decorators, info, terminal blue |
 | rose | `#d98a9a` | `UPPER_CASE` constants, bracket level 2, terminal magenta |
 | pink | `#e3b9a0` | built-in types (`int`, `str`, `dict`), bracket level 3 |
 | red | `#bf616a` | errors, deleted lines, failing tests |
