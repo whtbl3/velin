@@ -20,7 +20,7 @@
   --md-border: #30302e;
   --md-border-soft: #262624;
   --md-hover: rgba(255, 255, 255, 0.07);
-  --md-bad: #bf616a; --md-bad-bg: rgba(191, 97, 106, 0.16); --md-bad-cell: rgba(191, 97, 106, 0.22);
+  --md-bad-bg: rgba(191, 97, 106, 0.16);
   --md-accent: #ea9a78;
   --md-accent-bg: rgba(217, 119, 87, 0.12);
   --md-link: #ea9a78;
@@ -54,7 +54,7 @@
   --md-border: #d8d4cc;
   --md-border-soft: #e6e1d8;
   --md-hover: rgba(0, 0, 0, 0.055);
-  --md-bad: #a8332b; --md-bad-bg: rgba(168, 51, 43, 0.10); --md-bad-cell: rgba(168, 51, 43, 0.18);
+  --md-bad-bg: rgba(168, 51, 43, 0.10);
   --md-accent: #b85a35;
   --md-accent-bg: rgba(184, 90, 53, 0.10);
   --md-link: #b85a35;
@@ -320,12 +320,11 @@ html body,
     /* Markers, placed after hover so they stay visible under it:
        a row holding .drop turns red (row removed / should not exist),
        a cell holding .bad turns red (wrong value, rest of the row is fine). */
-    tbody tr:has(.drop) td { background: var(--md-bad-bg); }
-    tbody tr td:has(.bad) { background: var(--md-bad-cell); }
+    tbody tr:has(.drop) td,
+    tbody tr td:has(.bad) { background: var(--md-bad-bg); }
   }
 
   /* <span class="bad">wrong value</span>, <span class="drop">why this row goes away</span> */
-  .bad { color: var(--md-bad); font-weight: 600; }
   .drop { font-style: italic; }
 
   img { max-width: 100%; border-radius: 8px; }
