@@ -19,7 +19,8 @@
   --md-heading: #f4f1ec;
   --md-border: #30302e;
   --md-border-soft: #262624;
-  --md-hover: rgba(255, 255, 255, 0.04);
+  --md-hover: rgba(255, 255, 255, 0.07);
+  --md-bad: #bf616a; --md-bad-bg: rgba(191, 97, 106, 0.16); --md-bad-cell: rgba(191, 97, 106, 0.30);
   --md-accent: #ea9a78;
   --md-accent-bg: rgba(217, 119, 87, 0.12);
   --md-link: #ea9a78;
@@ -33,7 +34,7 @@
   --md-tone-note: #6c9fc4; --md-tone-note-bg: rgba(126, 182, 199, 0.08);
   --md-tone-tip: #a7bd86;  --md-tone-tip-bg: rgba(142, 192, 129, 0.08);
   --md-tone-warn: #ea9a78; --md-tone-warn-bg: rgba(232, 168, 124, 0.10);
-  --md-tone-danger: #ea9a78; --md-tone-danger-bg: rgba(217, 119, 87, 0.10);
+  --md-tone-danger: #bf616a; --md-tone-danger-bg: rgba(191, 97, 106, 0.10);
   --md-hl-comment: #8a847d;
   --md-hl-keyword: #ea9a78;
   --md-hl-string: #a7bd86;
@@ -52,7 +53,8 @@
   --md-heading: #1a1612;
   --md-border: #d8d4cc;
   --md-border-soft: #e6e1d8;
-  --md-hover: rgba(0, 0, 0, 0.035);
+  --md-hover: rgba(0, 0, 0, 0.055);
+  --md-bad: #a8332b; --md-bad-bg: rgba(168, 51, 43, 0.10); --md-bad-cell: rgba(168, 51, 43, 0.18);
   --md-accent: #b85a35;
   --md-accent-bg: rgba(184, 90, 53, 0.10);
   --md-link: #b85a35;
@@ -315,12 +317,24 @@ html body,
       color: var(--md-text-dim);
     }
     tbody tr:hover td { background: var(--md-hover); }
+    /* Markers, placed after hover so they stay visible under it:
+       a row holding .drop turns red (row removed / should not exist),
+       a cell holding .bad turns red (wrong value, rest of the row is fine). */
+    tbody tr:has(.drop) td { background: var(--md-bad-bg); }
+    tbody tr td:has(.bad) {
+      background: var(--md-bad-cell);
+      box-shadow: inset 0 0 0 1px var(--md-bad);
+    }
   }
+
+  /* <span class="bad">wrong value</span>, <span class="drop">why this row goes away</span> */
+  .bad { color: var(--md-bad); font-weight: 600; }
+  .drop { font-style: italic; }
 
   img { max-width: 100%; border-radius: 8px; }
 
-  /* Admonitions: !!! note / > [!NOTE] */
-  .admonition, .github-alert, .markdown-alert {
+  /* Admonitions: !!! note / > [!NOTE] (MPE renders the latter as .callout[data-callout]) */
+  .admonition, .github-alert, .markdown-alert, .callout {
     margin: 1.6em 0;
     padding: 14px 18px;
     border: none;
@@ -328,17 +342,27 @@ html body,
     border-radius: 0 10px 10px 0;
     background: var(--tone-bg, var(--md-quote-bg));
     box-shadow: none;
-    .admonition-title, .markdown-alert-title {
+    .admonition-title, .markdown-alert-title, .callout-title {
       color: var(--tone, var(--md-accent));
       font-weight: 700;
       background: transparent;
       border: none;
     }
-    &.note, &.info, &.markdown-alert-note   { --tone: var(--md-tone-note);   --tone-bg: var(--md-tone-note-bg); }
-    &.tip, &.success, &.markdown-alert-tip  { --tone: var(--md-tone-tip);    --tone-bg: var(--md-tone-tip-bg); }
-    &.warning, &.important, &.markdown-alert-warning, &.markdown-alert-important
+    .callout-title::before { color: var(--tone, var(--md-accent)); }
+    &.note, &.info, &.markdown-alert-note,
+    &[data-callout="note"], &[data-callout="info"], &[data-callout="todo"]
+                                            { --tone: var(--md-tone-note);   --tone-bg: var(--md-tone-note-bg); }
+    &.tip, &.success, &.markdown-alert-tip,
+    &[data-callout="tip"], &[data-callout="hint"], &[data-callout="success"],
+    &[data-callout="check"], &[data-callout="done"]
+                                            { --tone: var(--md-tone-tip);    --tone-bg: var(--md-tone-tip-bg); }
+    &.warning, &.important, &.markdown-alert-warning, &.markdown-alert-important,
+    &[data-callout="warning"], &[data-callout="important"], &[data-callout="attention"],
+    &[data-callout="question"]
                                             { --tone: var(--md-tone-warn);   --tone-bg: var(--md-tone-warn-bg); }
-    &.danger, &.caution, &.error, &.markdown-alert-caution
+    &.danger, &.caution, &.error, &.markdown-alert-caution,
+    &[data-callout="caution"], &[data-callout="danger"], &[data-callout="error"],
+    &[data-callout="fail"], &[data-callout="bug"]
                                             { --tone: var(--md-tone-danger); --tone-bg: var(--md-tone-danger-bg); }
   }
 }

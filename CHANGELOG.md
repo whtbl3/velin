@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.2
+
+- MPE: `> [!NOTE]`, `> [!TIP]`, `> [!CAUTION]` and the other callouts now use the theme's tones. MPE renders them as `.callout[data-callout]`, which the style did not cover, so they kept MPE's default colors.
+- MPE: caution, danger and error are red `#bf616a` instead of the accent orange.
+- MPE tables: row hover is easier to see. `<span class="bad">` marks a wrong value and tints its cell red with a red outline; `<span class="drop">` marks a row that goes away and tints the whole row red.
+
 ## 0.7.0
 
 - Renamed to **Velin**: themes are now **Velin Dark** and **Velin Dimmed**, the command is **Velin: Install Markdown Preview Enhanced Style**, and the extension has its own icon. Files installed by the old "Claude Theme" extension are recognized and updated in place.
